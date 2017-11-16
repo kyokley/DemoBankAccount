@@ -28,4 +28,4 @@ class BankAccount(object):
 
         if self.preferred and self._balance < PREFERRED_BALANCE:
             self.preferred = False
-            send_email("Balance is too to maintain preferred status")
+            send_email("Balance is too low to maintain preferred status")
